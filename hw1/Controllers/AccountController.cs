@@ -42,7 +42,6 @@ namespace ImageSharingWithUpload.Controllers
             if(!(Username == null)) {       // check if username is not null 
                 Response.Cookies.Append("Username", Username, options);
             }
-            
             // End TODO
             
             Response.Cookies.Append("ADA", ("on".Equals(ADA) ? "true" : "false"), options);
