@@ -103,7 +103,10 @@ namespace ImageSharingWithUpload.Controllers
                     var jsonOptions = new JsonSerializerOptions { WriteIndented = true };
 
                     // TODO save image on server file system
-                    
+                    String imagePath = imageDataFile(image.Id);
+                    using (var fileStream = new FileStream(imagePath, FileMode.Create)) {
+                        await imageFile.CopyToAsync(fileStream);
+                    }
 
                     // Save metadata as JSON object on file system
                     var jsonData = JsonSerializer.Serialize(image, jsonOptions);
