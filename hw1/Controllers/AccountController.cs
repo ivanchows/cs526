@@ -24,6 +24,7 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
+        [HttpGet]
         public ActionResult Register()
         {
             CheckAda();
@@ -31,6 +32,7 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
+        
         public ActionResult Register(String Username, String ADA)
         {
             CheckAda();

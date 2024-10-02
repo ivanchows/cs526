@@ -29,6 +29,7 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
+        [HttpGet]
         public IActionResult Index(String id = "Stranger")
         {
             CheckAda();

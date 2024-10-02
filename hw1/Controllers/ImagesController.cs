@@ -103,7 +103,7 @@ namespace ImageSharingWithUpload.Controllers
                     var jsonOptions = new JsonSerializerOptions { WriteIndented = true };
 
                     // TODO save image on server file system
-
+                    
 
                     // Save metadata as JSON object on file system
                     var jsonData = JsonSerializer.Serialize(image, jsonOptions);
@@ -135,6 +135,7 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
+        [HttpGet]
         public async Task<IActionResult> Details(Image image)
         {
             CheckAda();
