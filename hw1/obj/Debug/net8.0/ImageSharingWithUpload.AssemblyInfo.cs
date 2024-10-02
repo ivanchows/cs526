@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageSharingWithUpload")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e3e20766ba04c16b82715b163cf3d3ce8ef4c42")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageSharingWithUpload")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageSharingWithUpload")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

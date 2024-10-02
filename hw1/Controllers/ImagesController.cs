@@ -67,6 +67,7 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
+        [HttpGet]
         public IActionResult Upload()
         {
             CheckAda();
@@ -75,6 +76,7 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
+        [HttpPost]
         public async Task<IActionResult> Upload(Image image,
                                                 IFormFile imageFile)
         {
@@ -124,6 +126,7 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
+        [HttpGet]
         public IActionResult Query()
         {
             CheckAda();
