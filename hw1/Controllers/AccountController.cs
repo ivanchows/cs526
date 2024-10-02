@@ -32,13 +32,16 @@ namespace ImageSharingWithUpload.Controllers
         }
 
         // TODO
-        
+        [HttpPost]
         public ActionResult Register(String Username, String ADA)
         {
             CheckAda();
             var options = new CookieOptions() { IsEssential = true, Secure = true, SameSite = SameSiteMode.None, Expires = DateTime.Now.AddMonths(3)  };
 
             // TODO add cookies for "Username".
+            if(!(Username == null)) {       // check if username is not null 
+                Response.Cookies.Append("Username", Username, options);
+            }
             
             // End TODO
             
